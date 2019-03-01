@@ -1,0 +1,124 @@
+object Form1: TForm1
+  Left = 2
+  Height = 702
+  Top = 146
+  Width = 1125
+  AutoSize = True
+  Caption = 'Form1'
+  ClientHeight = 702
+  ClientWidth = 1125
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '1.8.4.0'
+  object SpinEdit1: TSpinEdit
+    Left = 64
+    Height = 28
+    Top = 104
+    Width = 279
+    MaxValue = 255
+    MinValue = 1
+    TabOrder = 0
+    Value = 1
+  end
+  object Button1: TButton
+    Left = 416
+    Height = 71
+    Top = 144
+    Width = 94
+    Caption = '1'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 602
+    Height = 71
+    Top = 144
+    Width = 94
+    Caption = '0'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object RadioButton1: TRadioButton
+    Left = 64
+    Height = 24
+    Top = 64
+    Width = 79
+    Caption = 'Decimal'
+    Checked = True
+    OnChange = RadioButton1Change
+    TabOrder = 5
+    TabStop = True
+  end
+  object RadioButton2: TRadioButton
+    Left = 416
+    Height = 24
+    Top = 64
+    Width = 70
+    Caption = 'Binaire'
+    OnChange = RadioButton2Change
+    TabOrder = 3
+  end
+  object RadioButton3: TRadioButton
+    Left = 792
+    Height = 24
+    Top = 64
+    Width = 111
+    Caption = 'Hexadécimal'
+    OnChange = RadioButton3Change
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = 512
+    Height = 45
+    Top = 88
+    Width = 88
+    Caption = '--------'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -37
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Convertir: TButton
+    Left = 504
+    Height = 31
+    Top = 272
+    Width = 102
+    Caption = 'Convertir'
+    OnClick = ConvertirClick
+    TabOrder = 6
+  end
+  object Label2: TLabel
+    Left = 840
+    Height = 45
+    Top = 87
+    Width = 22
+    Caption = '--'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -37
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button3: TButton
+    Left = 520
+    Height = 39
+    Top = 160
+    Width = 72
+    Caption = 'Reset'
+    OnClick = Button3Click
+    TabOrder = 7
+  end
+  object Edit1: TEdit
+    Left = 768
+    Height = 28
+    Top = 168
+    Width = 172
+    MaxLength = 2
+    TabOrder = 8
+  end
+end
